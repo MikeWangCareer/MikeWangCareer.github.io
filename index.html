@@ -133,27 +133,41 @@
           <li><a href="https://pubs.rsc.org/en/Content/ArticleLanding/2013/PY/C2PY20797D#!divAbstract">Metal-free click polymerizations of activated azide and alkynes</a>, <b>Q. Wang</b>, H. Li, Q. Wei, J. Sun, J. Wang, X. Zhang, A. Qin and B. Tang, Polym. Chem., 2013, 4, 1396.</li>
         </ul>
       </div>
-      <!-- Contact -->
-      <a name="Contact"></a>
-      <br>
-      <h2>Contact</h2>
-      <table>
-        <tr>
-          <td width=50%>
-            <ul>
-              <li><b>Email</b>: <a href="mailto: MikeWangCareer@outlook.com">MikeWangCareer@outlook.com</a></li><br>
-              <li><b>LinkedIn</b>: <a href="https://www.linkedin.com/in/mikewang-opv-tt">https://www.linkedin.com/in/mikewang-opv-tt</a></li><br>
-            </ul>
-          </td>
-          <td>
-            <center><a href="https://www.linkedin.com/in/mikewang-opv-tt"><img src="img/QR_LinkedIn.png" width="200"></a></center>
-          </td>
-        </tr>
-      </table>
     </body>
 
+    <br>
+
     <footer>
+      <!-- Contact -->
+      <a name="Contact"></a>
+      <h2>Contact</h2>
       <br>
-      <p><a href="#TOP">TOP</a></p>
+      <center>
+        (Message will be submitted by email)
+        <br>
+        <textarea id="userMessage" rows="10" cols="50"></textarea>
+        <br>
+        <button onclick="sendEmail()" onsubmit="return false;">Submit</button>
+      </center>
+      <script>
+        function sendEmail() {
+            var link = "mailto:MikeWangCareer@outlook.com"
+                     + "?cc="
+                     + "&subject=" + encodeURIComponent("Mail to Mike Wang (Career related)")
+                     + "&body=" + encodeURIComponent(document.getElementById('userMessage').value)
+            ;
+
+            window.location.href = link;
+        }
+      </script>
+      <br>
+
+      <center>
+        <a href="https://www.linkedin.com/in/mikewang-opv-tt"><img src="img/QR_LinkedIn.png" width="150"></a>
+      </center>
+      <br>
+
+      <hr>
+      <center><a href="#TOP">TOP</a></center>
     </footer>
 </html>
