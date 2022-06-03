@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+  color: white;
+}
+h1 {
+  text-align: center;
+  color: orange;
+}
+
+h2 {
+  text-align: left;
+  color: orange;
+}
+
+p {
+  text-align: center;
+  color: lightgrey;
+}
+
