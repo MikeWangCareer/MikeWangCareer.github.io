@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="This website is about...">
+      <meta name="author" content="Mike Wang">
+      <meta name="keywords" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../CSS/style_light.css">
+      <title>Mike Wang - OLED material expert</title>
+    </head>
+
+    <body>
+      <a id="TOP"></a>
+      <br><h1>Could hyper-phosphorescence improve LT of blue PhOLED?</h1>
+      <p>(by <a href="https://mikewangcareer.github.io/" target="_blank">Mike Wang</a>)</p>
+
+      <nav>
+      </nav>
+
+      <section>
+        <div>
+          <table width="35%">
+            <tr>
+              <td>
+                <ol>
+                  <li><a href="#1">PhOLED device lifetime (LT)</a></li>
+                  <li><a href="#2">Hyper approach</a></li>
+                  <li><a href="#3">Fluorescent-emitter (FLUO)</a></li>
+                  <li><a href="#4">Design rules</a></li>
+                </ol>
+              </td>
+            </tr>
+        </table>
+        </div>
+      </section>
+
+      <div>
+        <a id="1"></a>
+        <h2>(1/4) PhOLED device lifetime (LT)</h2>
+        <ul>
+          <li>PhOLED device lifetime (LT) is determined by many factors (e.g., intrinsic stability, excited-state lifetime, charge balance, ...), among which the "<b>color effect</b>" is pronounced</li><br>
+          <li>Device LT of PhOLED: <span style="color:teal">Green</span> > <span style="color:DeepSkyBlue">sky-blue</span> > <span style="color:blue">blue</span> (ranges are of different orders of magnitude)</li>
+        </ul>
+        <center><img src="" width=""></center>
+      </div>
+
+      <div>
+        <a id="2"></a>
+        <h2>(2/4) Hyper approach</h2>
+        <ul>
+          <li>Hyper-device type <b>I</b> (as depicted in figure <b style="color:red">a</b> below), in general, should present (much) longer device lifetime (LT) than that of hyper-device type <b>II</b> (as depicted in figure <b style="color:red">b</b> below), due to the different colors of ref devices (in <span style="color:DeepSkyBlue">sky-blue</span> & <span style="color:purple">purple</span>)</li><br>
+          <li>Regarding hyper-phosphorescence, this trend should stay the same, since <span style="color:DeepSkyBlue">sky-blue</span> phosphorescent-emitters in general are more stable than <span style="color:DarkBlue">deep-blue</span> ones in device</li>
+        </ul>
+        <center><img src="../img/2022-06-03_1.png" width="500px"></center>
+        <p><a href="https://www.nature.com/articles/s41566-021-00765-3" target="_blank">Nature Photonics, 2021, 15, 173-174</a></p>
+        <br><br>
+        <center><img src="../img/2022-06-04_1.png" width="500px"></center>
+        <p>Schematic diagram of energy transfer in <b>hypyer-fluorescence</b> & <b>hyper-phosphorescence</b></p>
+        <p><a href="https://pubs.acs.org/doi/pdf/10.1021/acsami.1c09189" target="_blank">ACS Applied Materials & Interfaces, 2022, 14, 20463-20467</a></p>
+      </div>
+
+      <div>
+        <a id="3"></a>
+        <h2>(3/4) Fluorescent-emitter (FLUO)</h2>
+        <ul>
+          <li>A suitable fluorescent-emitter (<b>FLUO</b>) should be able to work with <span style="color:DeepSkyBlue">sky-blue</span> or even <span style="color:lightgreen">greenish</span> Phosphorescent-emitter (<b>PHO</b>) to achieve decent device LT</li><br>
+          <li>Certain <b>favorable optical properties</b> are required (e.g., intensive Abs., small Stokes shift, narrowband emission) to achieve efficient energy transfer (FRET)</li><br>
+          <li><b>v-DABNA</b> (structure shown below) presents many desired optical properties, but the structure is <b style="color:red">too planar</b> => low doping concentration in device & unfavorable Dexter transfer & undesired direct charge recombination => inefficient energy transfer (from PHO to FLUO) & unwanted triplet exciton on FLUO => <b style="color:red">color purity, efficiency & LT loss</b></li><br>
+          <li>Therefore, a more <b>sterically shielded</b> FLUO (than v-DABNA) with favorable optical properties (similar to v-DABNA) is desired for the application in blue PhOLED (with higher doping concentration than v-DABNA)</li><br>
+        </ul>
+        <center><img src="../img/2022-06-03_2.png" target="_blank" width="500px"></center>
+        <p><a href="https://www.nature.com/articles/s41566-019-0476-5" target="_blank">Nature Photonics, 2019, 13, 678–682</a></p>
+      </div>
+
+      <div>
+        <a id="4"></a>
+        <h2>(4/4) Design rules</h2>
+        <ul>
+          <li>When attaching electron-donating group (EDG) or electron-withdrawing group (EWG) to phenyl ring, the ortho- & para-posiiton would be either electron-rich or electron-poor due to the resonance effect</li><br>
+          <center><img src="../img/2022-06-04_3.png" width="500px"></center>
+          <center><img src="../img/2022-06-04_2.png" width="600px"></center>
+          <li>In the case of v-DABNA, nitrogen atoms function as the the EDG due to the lone-pair electrons, while boron atoms as the EWG due to the empty p-orbital</li><br>
+          <li>These two nitrogen/boron atoms are meta to each other, so that the ortho- & para-positions are overlapped, which make these positions more electron-rich/poor</li><br>
+          <li>Nitrogen atoms are ortho to boron atoms. In this way, the electron-rich & poor positions are next to each other (i.e., alternating pattern), which is responsible for the favorable optical propeties (e.g., narrowband emission)</li><br>
+          <center><img src="../img/2022-06-04_4.png" width="300px"></center><br>
+          <center><img src="../img/2022-06-04_7.png" width="400px"></center>
+          <p>The "+" and "-" signs shown above stand for the electron-poor & electron-rich positions</p>
+          <li>Even with nitrogen atoms (EDG) only, narrowband emissoin could be achieved with a rigid core & two nitrogen atoms meta to each other</li><br>
+          <center><img src="../img/2022-06-04_5.png" width="500px"></center>
+          <p>The structure with two nitrogen atoms <b>para</b> to each other shows broader & red-shifted emission spectrum compared with the structure with two nitrogen atoms <b>meta</b> to each other, therefore difficult to compare the FWHM in eV</p>
+          <p><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.202017328" target="_blank">doi.org/10.1002/anie.202017328</a><p>
+          <li>Based on the above-mentioned principles & possible steric shielding, favorable FLUO (e.g., intensive Abs., narrowband emission, small Stokes Shift) could be designed (examples shown below)</li><br>
+          <center><img src="../img/2022-06-04_6.png" width="800px"></center>
+          <p><a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.202201588" target="_blank">doi.org/10.1002/anie.202201588</a><p>
+        </ul>
+      </div>
+    </body>
+
+    <footer>
+      <div>
+        <hr>
+        <a id="appendix"></a>
+        <h2>Appendix</h2>
+        <ul>
+          <h3>2022</h3>
+          <li><a href="https://www.oled-info.com/universal-display-reports-its-financial-results-q4-2021" target="_blank">UDC hopes to have a commercial blue PHOLED by 2024 (24-Feb-2022)</a></li>
+          <li><a href="https://pubs.acs.org/doi/pdf/10.1021/acsami.1c09189" target="_blank">Why Do We Still Need a Stable Long Lifetime Deep Blue OLED Emitter? (doi.org/10.1021/acsami.1c09189)</a></li>
+          <h3>2017</h3>
+          <li><a href="https://onlinelibrary.wiley.com/doi/10.1002/adom.201600901" target="_blank">Degradation Mechanism and Lifetime Improvement Strategy for Blue Phosphorescent Organic Light-Emitting Diodes (doi.org/10.1002/adom.201600901)</a></li>
+          <h3>2014</h3>
+          <li><a href="https://www.oled-info.com/blue-pholed-breakthrough-researchers-manage-extend-lifetime-tenfold" target="_blank">Blue PHOLED breakthrough: researchers manage to extend the lifetime tenfold (25-Sep-2014)</a></li>
+          <h3>Other</h3>
+          <li><a href="https://www.chem.uci.edu/~dmitryf/manuals/Fundamentals/Fluorescence%20Excitation%20and%20Emission%20Fundamentals.pdf" target="_blank">Fluorescence Excitation and Emission Fundamentals</a></li>
+          <li><a href="https://chemistry.stackexchange.com/questions/99852/hydrogen-molecule-potential-energy-graph" target="_blank">Hydrogen molecule potential energy graph</a></li>
+        </ul>
+      </div>
+
+      <div style="background-color:DarkCyan">
+        <center><h3><a href="#TOP">TOP</a></h3></center>
+      </div>
+    </footer>
+</html>
