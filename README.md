@@ -1,1 +1,2 @@
 - https://mikewangcareer.github.io
+- https://mikewangcareer.github.io/CV_CN.html 
